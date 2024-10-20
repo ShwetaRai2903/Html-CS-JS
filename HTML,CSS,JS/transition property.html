@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box{
+			height: 200px;
+			width: 200px;
+			background-color: black;
+			/*transition-property: width 2s, height 5s; */
+			/*transition-duration: 3s;*/
+			/*transition-delay: 1s;*/
+			transition-timing-function: ease-out;
+			transition: width 2s, height 5s;
+			/*transition: all 3s ease-in 0.5s;*/
+
+		}
+		.box:hover{
+			width: 1000px;
+			height: 500px;
+			background-color: blue;
+		}
+
+		.ease-in{
+			height: 200px;
+			width: 200px;
+			background-color: purple;
+			transition: 1s;
+		}
+
+		.ease-in:hover{
+			transform: scale( 1,2);
+		}
+
+		h2{
+			background-color: aqua;
+			transition:all 1s ease-in;
+		}
+
+		h2:hover{
+			font-size: 3rem;
+			background-color: blueviolet;
+		}
+
+		a{
+			text-decoration: none;
+			transition: all 1s ease-in;
+		}
+
+		a:hover{
+			text-decoration: underline;
+			border:2px solid black;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+	</div>
+
+	<div class="ease-in"></div>
+	<hr>
+	<h2>Shweta Rai</h2>
+	<hr>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Menu</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
